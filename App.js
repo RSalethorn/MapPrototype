@@ -9,11 +9,22 @@ class App extends React.Component {
 
     onPhotoSelect(event) {
         console.log(event.target.value);
+        this.setState({
+            backgroundLoaded: "true",
+            backgroundURL: event.target.value
+        })
     }
 
     render(){
+        let backgroundImg = <img></img>
+        if (this.state.backgroundLoaded == true) {
+            backgroundImg = <img src={this.state.backgroundURL}></img>
+        }
         return(
-            <input type="file" id="file" accept="image/*" onChange={this.onPhotoSelect}/>
+            <div id="app">
+                {backgroundImg}
+                <input type="file" id="file" accept="image/*" onChange={this.onPhotoSelect}/>
+            </div>
         );
     }
 }
