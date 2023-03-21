@@ -6,9 +6,14 @@ class App extends React.Component {
             backgroundURL: null
         }
     }
+
+    onPhotoSelect(event) {
+        console.log(event.target.value);
+    }
+
     render(){
         return(
-            <input type="file" id="file" accept="image/*" />
+            <input type="file" id="file" accept="image/*" onChange={this.onPhotoSelect}/>
         );
     }
 }
