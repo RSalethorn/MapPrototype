@@ -1,7 +1,12 @@
 class App extends React.Component {
+    constructor() {
+        this.state = {
+            message: "Hello Rob"
+        }
+    }
     render(){
         return(
-            <p>Map Test</p>
+            <p>{this.state.message}</p>
         );
     }
 }
