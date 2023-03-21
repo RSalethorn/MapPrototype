@@ -8,10 +8,10 @@ class App extends React.Component {
     }
 
     onPhotoSelect(event) {
-        console.log(event.target.value);
+        console.log(event.target.result);
         this.setState({
             backgroundLoaded: true,
-            backgroundURL: event.target.value
+            backgroundURL: event.target.result
         })
     }
 
