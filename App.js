@@ -2,12 +2,13 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            message: "Hello Rob"
+            backgroundLoaded: "false",
+            backgroundURL: null
         }
     }
     render(){
         return(
-            <p>{this.state.message}</p>
+            <Input type="file" id="file" accept="image/*" />
         );
     }
 }
