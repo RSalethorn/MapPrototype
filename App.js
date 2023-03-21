@@ -1,6 +1,5 @@
-import {useState} from 'react';
 function App() {
-    const [message, setMessage] = useState("Hello Rob");
+    const [message, setMessage] = ReactDOM.useState("Hello Rob");
 
     return (<p>{message}</p>);
 }
