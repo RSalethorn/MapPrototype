@@ -11,7 +11,7 @@ class App extends React.Component {
         console.log(event.target.result);
         this.setState({
             backgroundLoaded: true,
-            backgroundURL: URL.createObjectURL(event.target.files[0]);
+            backgroundURL: URL.createObjectURL(event.target.files[0])
         })
     }
 
