@@ -1,5 +1,5 @@
 function App() {
-    const [message, setMessage] = React.UseState("Hello Rob");
+    const [message, setMessage] = useState("Hello Rob");
 
     return (<p>{message}</p>);
 }
