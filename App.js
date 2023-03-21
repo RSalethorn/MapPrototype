@@ -8,7 +8,7 @@ class App extends React.Component {
     }
     render(){
         return(
-            <Input type="file" id="file" accept="image/*" />
+            <input type="file" id="file" accept="image/*" />
         );
     }
 }
