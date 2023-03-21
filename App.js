@@ -23,7 +23,7 @@ class App extends React.Component {
         return(
             <div id="app">
                 {backgroundImg}
-                <input type="file" id="file" accept="image/*" onChange={this.onPhotoSelect}/>
+                <input type="file" id="file" accept="image/*" onChange={this.onPhotoSelect.bind(this)}/>
             </div>
         );
     }
