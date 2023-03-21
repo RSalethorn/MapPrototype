@@ -2,7 +2,7 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            backgroundLoaded: "false",
+            backgroundLoaded: false,
             backgroundURL: null
         }
     }
@@ -10,7 +10,7 @@ class App extends React.Component {
     onPhotoSelect(event) {
         console.log(event.target.value);
         this.setState({
-            backgroundLoaded: "true",
+            backgroundLoaded: true,
             backgroundURL: event.target.value
         })
     }
