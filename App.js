@@ -1,9 +1,7 @@
-class App extends React.Component {
-    render(){
-        return(
-            <p>Map Test</p>
-        );
-    }
+function App() {
+    const [message, setMessage] = ReactDOM.useState("Hello Rob");
+
+    return (<p>{message}</p>);
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
